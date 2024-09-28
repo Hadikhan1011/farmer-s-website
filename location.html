@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Location and Language</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Select Your Location and Language</h1>
+        </header>
+
+        <div class="location-form">
+            <form id="locationForm">
+                <label for="location">Enter Your Current Location:</label>
+                <input type="text" id="location" name="location" required>
+                <br>
+                <label for="language">Select Language:</label>
+                <select id="language" name="language">
+                    <option value="en">English</option>
+                    <option value="ur">Urdu</option>
+                </select>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

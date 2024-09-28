@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light blue */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Limit max width */
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #4caf50, #81c784); /* Green gradient */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    animation: fadeIn 1s;
+}
+
+.intro {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.fruits-vegetables {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.fruit, .vegetable {
+    width: 100px;
+    height: 100px;
+    background-color: #ffeb3b; /* Yellow for fruits */
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+}
+
+.vegetable {
+    background-color: #4caf50; /* Green for vegetables */
+}
+
+.login-section, .weather-info {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+}
+
+button {
+    background: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #388e3c; /* Darker green */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .login-section, .weather-info {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .login-section, .weather-info {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}

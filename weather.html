@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Information</h1>
+        </header>
+
+        <div class="weather-info">
+            <h2>Your Area Weather:</h2>
+            <p id="weather-details">Loading weather details...</p>
+            <h3>Advice:</h3>
+            <p id="advice">Make sure to water your crops adequately and check for pests!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const location = localStorage.getItem('location');
+        const language = localStorage.getItem('language');
+        document.getElementById('weather-details').textContent = `Location: ${location}, Language: ${language}`;
+    </script>
+</body>
+</html>
